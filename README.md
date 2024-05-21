@@ -21,7 +21,7 @@ This repository contains a comprehensive design system implemented in React Nati
 1. Clone the repository:
    ```bash
    git clone https://github.com/ashinkuniyil/DesignSystem.git
-   cd DesignSystemApp
+   cd DesignSystem
    ```
 
 2. Install dependencies:
