@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
-import {useTheme} from '../styles/themeProvider';
-import {elevation} from '../styles/elevation';
-import {borderRadius} from '../styles/borderRadius';
+import {useTheme, elevation, borderRadius} from '../styles';
 
 const Card = ({company, position, location, salary, logo}) => {
   const {theme} = useTheme();
@@ -18,7 +16,7 @@ const Card = ({company, position, location, salary, logo}) => {
         },
       ]}>
       <View style={styles.header}>
-        <Image source={{uri: logo}} style={styles.logo} />
+        {logo && <Image source={{uri: logo}} style={styles.logo} />}
         <View style={styles.headerText}>
           <Text style={[styles.company, {color: theme.colors.text}]}>
             {company}

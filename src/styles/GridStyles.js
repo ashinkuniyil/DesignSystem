@@ -11,7 +11,7 @@ const columnWidth =
   (width - CONTAINER_PADDING * 2 - (GRID_COLUMNS - 1) * GUTTER_WIDTH) /
   GRID_COLUMNS;
 
-const styles = StyleSheet.create({
+const GridStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
   }),
 });
 
-export default styles;
+export default GridStyles;

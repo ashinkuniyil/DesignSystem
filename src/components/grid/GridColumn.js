@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import styles from '../../styles/GridStyles';
+import {GridStyles as styles} from '../../styles';
 
 const GridColumn = ({children, span = 1}) => {
   const columnStyle =
